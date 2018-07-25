@@ -43,7 +43,7 @@ class SideCardFocus extends React.Component {
 
     componentWillMount(){
         //debugger;
-        fetch(`http://localhost:5000/api/getcommentsforpost?id=${this.state.post.id}`, {mode: 'cors'})
+        fetch(`http://facesdev.herokuapp.com/api/getcommentsforpost?id=${this.state.post.id}`, {mode: 'cors'})
             .then((result) =>{ 
                 return result.json();
             })
@@ -54,7 +54,7 @@ class SideCardFocus extends React.Component {
         //TODO: make it actually put the comment in the db
         debugger;
         this.state.comments.push({ userid: this.state.userId, text: this.state.newComment });
-         var temp = fetch(`http://localhost:5000/api/createcomment`, {
+         var temp = fetch(`http://facesdev.herokuapp.com/api/createcomment`, {
       headers:{
         'Access-Control-Allow-Origin': '*'
       },

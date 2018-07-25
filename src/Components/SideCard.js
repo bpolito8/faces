@@ -51,7 +51,7 @@ class SideCard extends React.Component {
     }
 
     likePost(){
-        var temp = fetch(`http://localhost:5000/api/likepost`, {
+        var temp = fetch(`http://facesdev.herokuapp.com/api/likepost`, {
       headers:{
         'Access-Control-Allow-Origin': '*'
       },
@@ -73,7 +73,7 @@ class SideCard extends React.Component {
     }
 
     unlikePost(){
-        var temp = fetch(`http://localhost:5000/api/unlikepost`, {
+        var temp = fetch(`http://facesdev.herokuapp.com/api/unlikepost`, {
       headers:{
         'Access-Control-Allow-Origin': '*'
       },

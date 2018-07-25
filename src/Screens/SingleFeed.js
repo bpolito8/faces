@@ -26,12 +26,12 @@ class SingleFeed extends React.Component {
     }
 
     componentWillMount(){
-        fetch(`http://localhost:5000/api/getfeedbyid?id=${this.state.feedId}`, {mode: 'cors'})
+        fetch(`http://facesdev.herokuapp.com/api/getfeedbyid?id=${this.state.feedId}`, {mode: 'cors'})
             .then((result) =>{ 
                 return result.json();
             })
             .then((result) => this.setState({feed: result.rows[0]}));
-        fetch(`http://localhost:5000/api/getpostsforfeed`,  {
+        fetch(`http://facesdev.herokuapp.com/api/getpostsforfeed`,  {
             headers:{
                 'Access-Control-Allow-Origin': '*'
             },

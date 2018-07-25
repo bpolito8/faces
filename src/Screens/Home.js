@@ -27,7 +27,7 @@ class Home extends React.Component {
     }
 
     componentWillMount() {
-        fetch(`http://localhost:5000/api/getuserbyid?id=${this.state.userId}`, {
+        fetch(`http://facesdev.herokuapp.com/api/getuserbyid?id=${this.state.userId}`, {
             mode: 'cors',
             // headers: {
             //     'Authorization': `${this.props.token}`,
@@ -40,7 +40,7 @@ class Home extends React.Component {
             .then((result) => {
                 this.setState({ user: result.rows[0] });
             });
-        fetch(`http://localhost:5000/api/getsuggested?userid=${this.state.userId}`, {
+        fetch(`http://facesdev.herokuapp.com/api/getsuggested?userid=${this.state.userId}`, {
             mode: 'cors',
             // headers: {
             //     'Authorization': `${this.props.token}`,
@@ -53,7 +53,7 @@ class Home extends React.Component {
             .then((result) => {
                 this.setState({ suggested: result });
             });
-        fetch(`http://localhost:5000/api/getUserHomeFeed`, {
+        fetch(`http://facesdev.herokuapp.com/api/getUserHomeFeed`, {
             headers: {
                 'Access-Control-Allow-Origin': '*'
             },

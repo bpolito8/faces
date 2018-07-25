@@ -6,7 +6,7 @@ constructor(){
     this.logData = this.logData.bind(this);
 }
     logData(){
-        fetch('http://localhost:5000/api/getUserById?id=1', {mode: 'cors'})
+        fetch('http://facesdev.herokuapp.com/api/getUserById?id=1', {mode: 'cors'})
             .then((result) =>{ return result.json() })
             .then((result) => console.log(result));
     }

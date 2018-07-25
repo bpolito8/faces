@@ -23,7 +23,7 @@ class Discover extends React.Component {
 
   componentWillMount(){
     debugger;
-    fetch(`http://localhost:5000/api/getsuggested?userid=${this.state.userId}`, {
+    fetch(`http://facesdev.herokuapp.com/api/getsuggested?userid=${this.state.userId}`, {
             mode: 'cors',
             // headers: {
             //     'Authorization': `${this.props.token}`,
@@ -39,7 +39,7 @@ class Discover extends React.Component {
 }
 
 search(){
-  var temp = fetch(`http://localhost:5000/api/searchfeedsandusers`, {
+  var temp = fetch(`http://facesdev.herokuapp.com/api/searchfeedsandusers`, {
       headers:{
         'Access-Control-Allow-Origin': '*'
       },

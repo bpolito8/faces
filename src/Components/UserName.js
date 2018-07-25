@@ -12,7 +12,7 @@ class UserName extends React.Component {
     }
 
    componentWillMount(){
-        fetch(`http://localhost:5000/api/getUserIcon?id=${this.state.userId}`, {mode: 'cors'})
+        fetch(`http://facesdev.herokuapp.com/api/getUserIcon?id=${this.state.userId}`, {mode: 'cors'})
             .then((result) =>{ 
                 
                 return result.json();

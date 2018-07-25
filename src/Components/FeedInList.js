@@ -25,7 +25,7 @@ class FeedInList extends React.Component {
 
   followFeed() {
     debugger;
-    fetch(`http://localhost:5000/api/follow`, {
+    fetch(`http://facesdev.herokuapp.com/api/follow`, {
       headers: {
         'Access-Control-Allow-Origin': '*'
       },
@@ -48,7 +48,7 @@ class FeedInList extends React.Component {
 
   unfollowFeed() {
     debugger;
-    fetch(`http://localhost:5000/api/unfollow`, {
+    fetch(`http://facesdev.herokuapp.com/api/unfollow`, {
       headers: {
         'Access-Control-Allow-Origin': '*'
       },

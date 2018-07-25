@@ -69,7 +69,7 @@ class CreatePost extends React.Component {
   }
 
   componentWillMount(){
-    fetch(`http://localhost:5000/api/getFeedsForDropdown`, {mode: 'cors'})
+    fetch(`http://facesdev.herokuapp.com/api/getFeedsForDropdown`, {mode: 'cors'})
           .then((result) => {return result.json()})
           .then((result) => this.setState({feedOptions: result.rows}));
   }
@@ -77,7 +77,7 @@ class CreatePost extends React.Component {
   handleSubmit(){
     debugger;
     var data = this.state;
-    var temp = fetch(`http://localhost:5000/api/createpost`, {
+    var temp = fetch(`http://facesdev.herokuapp.com/api/createpost`, {
       headers:{
         'Access-Control-Allow-Origin': '*'
       },

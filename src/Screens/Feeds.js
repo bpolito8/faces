@@ -25,7 +25,7 @@ class Feeds extends React.Component {
     }
 
     componentWillMount(){
-        // fetch(`http://localhost:5000/api/getfeedsforuser?id=${this.state.userId}`, {mode: 'cors'})
+        // fetch(`http://facesdev.herokuapp.com/api/getfeedsforuser?id=${this.state.userId}`, {mode: 'cors'})
         //     .then((result) =>{ 
         //         return result.json();
         //     })

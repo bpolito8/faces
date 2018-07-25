@@ -12,12 +12,12 @@ import '../index.css';
 class MyProfile extends React.Component {
 
     componentWillMount(){
-        fetch(`http://localhost:5000/api/getuserbyid?id=${this.state.userId}`, {mode: 'cors'})
+        fetch(`http://facesdev.herokuapp.com/api/getuserbyid?id=${this.state.userId}`, {mode: 'cors'})
             .then((result) =>{ 
                 return result.json();
             })
             .then((result) => this.setState({user: result.rows[0]}));
-        fetch(`http://localhost:5000/api/getPostsForUser?id=${this.state.userId}`,  {mode: 'cors'})
+        fetch(`http://facesdev.herokuapp.com/api/getPostsForUser?id=${this.state.userId}`,  {mode: 'cors'})
             .then((result) =>{ 
                 return result.json();
             })
