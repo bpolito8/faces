@@ -43,7 +43,7 @@ class SignIn extends React.Component {
               <input className="form-control" name="username" onChange={this.handleInputChange}/>
             </div>
             <div className="row">
-              <label>Password</label>
+              <label>Password:</label>
               <input className="form-control" type="password" name="password" onChange={this.handleInputChange}/>
             </div>
             <div className="row">
