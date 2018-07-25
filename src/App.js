@@ -7,7 +7,7 @@ import createBrowserHistory from 'history/createBrowserHistory';
 
 //Styling Imports:
 import './index.css';
-//import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 //Screen Imports:
